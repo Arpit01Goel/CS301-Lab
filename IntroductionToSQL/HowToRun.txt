@@ -1,0 +1,7 @@
+Database is named main. CreateMainDatabase will remove all tables and make them again will all values.
+
+use sudo -u postgres psql to run psql
+> create database main;
+
+to run a file on perticular database, use
+> sudo -u postgres psql -d main -f commands.sql > output.txt
