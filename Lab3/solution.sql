@@ -1,23 +1,15 @@
-select title from course join takes on course.courseId = takes.course_id natural join student where student.dept_name = 'CSE';
+ select studentid, name from student natural join takes join course on course.courseid = takes.course_id where student.dept_name = course.dept_name group by studentid having (student.dept_name, count(*)) in (select dept_name, count(distinct courseid) from course group by dept_name) ;
 
-select ins_id from teaches join course on teaches.course_id = course.courseId where course.dept_name = 'EE';
 
-select name from student where studentId not in (select studentId from takes);
+ select courseid, count(courseid) from course join takes on takes.course_id = course.courseid group by course.courseid having count(courseid) >= all (select count(studentid) from takes group by course_id);
+-- select * from instructor; 
 
-select title, count(*) from course join takes on takes.course_id = course.courseId group by title;
+-- select * from instructor join teaches on instructor.insId = teaches.ins_id natural join takes join  student on student.studentid = takes.studentid where instructor.dept_name != student.dept_name;
 
-select insId from instructor where insId not in (select distinct ins_id from teaches);
 
-select dept_name, count(*) from course group by dept_name;
+select distinct insid from instructor where insid not in (select distinct insid from instructor join teaches on instructor.insId = teaches.ins_id natural join takes join  student on student.studentid = takes.studentid where instructor.dept_name != student.dept_name);
 
-select title from course where courseid not in (select course_id from section);
-
-select distinct name from student natural join takes join course on course.courseid = takes.course_ID where student.dept_name != course.dept_name;
-
-select count( distinct insid  ) from instructor group by dept_name;
-
-select title from course where credits in (select distinct credits from course where credits>3);
-
-select name, count(distinct course_id) from student natural join takes group by name;
-
-select classroom, count(distinct course_id) from section group by classroom;
+-- select * from takes;
+select studentid from takes where grade <= all (select distinct grade from takes);
+-- select * from teaches;
+select distinct  title from instructor join teaches on teaches.ins_id = instructor.insid join course on teaches.course_id = course.courseid where instructor.dept_name = course.dept_name;

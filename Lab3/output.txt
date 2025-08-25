@@ -1,9 +1,18 @@
- title 
--------
- CNS
- CNS
- TBS
- DSA
- CNS
-(5 rows)
+ studentid | name 
+-----------+------
+         4 | AMK
+         5 | DAB
+         7 | BBB
+         8 | LKZ
+        10 | NPY
+        12 | HME
+        14 | GLB
+        16 | LSC
+        17 | DAB
+        18 | NPP
+(10 rows)
+
+ courseid 
+----------
+(0 rows)
 
