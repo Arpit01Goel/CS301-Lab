@@ -12,7 +12,58 @@
         18 | NPP
 (10 rows)
 
- courseid 
-----------
-(0 rows)
+ courseid | count 
+----------+-------
+      201 |     3
+      655 |     3
+(2 rows)
+
+ insid 
+-------
+    19
+     4
+    10
+     6
+    13
+     2
+    18
+    11
+     9
+     3
+    12
+    15
+     5
+    14
+    20
+    17
+    16
+(17 rows)
+
+ studentid 
+-----------
+         5
+        17
+        10
+        13
+        18
+        16
+(6 rows)
+
+ title 
+-------
+ ASE
+ BCS
+ CNS
+ DM
+ DSA
+ DSP
+ ECM
+ FD
+ MET
+ MIB
+ OPT
+ ORG
+ TBS
+ WLD
+(14 rows)
 

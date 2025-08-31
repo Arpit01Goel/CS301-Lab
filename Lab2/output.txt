@@ -1,9 +1,139 @@
  title 
 -------
  CNS
- CNS
- TBS
  DSA
- CNS
-(5 rows)
+ TBS
+(3 rows)
+
+ ins_id 
+--------
+      3
+(1 row)
+
+ name 
+------
+ BKY
+ CDY
+ ZLB
+(3 rows)
+
+ title | count 
+-------+-------
+ DSP   |     1
+ CNS   |     3
+ OPT   |     1
+ ASE   |     2
+ ECM   |     2
+ TBS   |     1
+ DM    |     1
+ DSA   |     3
+ MET   |     1
+ FD    |     1
+ ORG   |     1
+ BCS   |     1
+(12 rows)
+
+ insid 
+-------
+     2
+     4
+     9
+    13
+    15
+    20
+(6 rows)
+
+ dept_name | count 
+-----------+-------
+ EE        |     1
+ CSE       |     3
+ CY        |     2
+ SIGCOM    |     2
+ ECE       |     1
+ ME        |     2
+ VLSI      |     1
+ CH        |     1
+ MS        |     1
+ PH        |     1
+ BIO       |     2
+ IT        |     1
+(12 rows)
+
+ title 
+-------
+ RC
+ SE
+ NEO
+ SPT
+(4 rows)
+
+ name 
+------
+ FTP
+ GIT
+ FBK
+(3 rows)
+
+ count 
+-------
+     1
+     1
+     3
+     2
+     2
+     2
+     1
+     3
+     2
+     1
+     1
+     1
+(12 rows)
+
+ title 
+-------
+ DSA
+ BCS
+ RC
+ SE
+ DM
+ ORG
+ NEO
+ MIB
+ SPT
+ TBS
+(10 rows)
+
+ name | count 
+------+-------
+ AMK  |     1
+ NPY  |     1
+ JKG  |     1
+ GIT  |     1
+ BMD  |     1
+ NPP  |     1
+ FBK  |     1
+ HME  |     1
+ FTP  |     1
+ DAB  |     2
+ GLB  |     1
+ BBB  |     1
+ LKZ  |     1
+ DAB  |     3
+ LSC  |     1
+(15 rows)
+
+ classroom | count 
+-----------+-------
+ CH1       |     3
+ CS1       |     2
+ CS2       |     2
+ CY1       |     1
+ CY2       |     1
+ EC1       |     2
+ EC2       |     2
+ EE1       |     1
+ ME2       |     2
+ PH2       |     1
+(10 rows)
 

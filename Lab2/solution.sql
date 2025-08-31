@@ -1,4 +1,4 @@
-select title from course join takes on course.courseId = takes.course_id natural join student where student.dept_name = 'CSE';
+select distinct title from course join takes on course.courseId = takes.course_id natural join student where student.dept_name = 'CSE';
 
 select ins_id from teaches join course on teaches.course_id = course.courseId where course.dept_name = 'EE';
 
@@ -18,6 +18,6 @@ select count( distinct insid  ) from instructor group by dept_name;
 
 select title from course where credits in (select distinct credits from course where credits>3);
 
-select name, count(distinct course_id) from student natural join takes group by name;
+select name, count( *) from student natural join takes group by student.studentId;
 
 select classroom, count(distinct course_id) from section group by classroom;
